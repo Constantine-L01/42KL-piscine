@@ -1,3 +1,10 @@
+# Skyscrapper
+
+*Source*
+1) https://www.krnsk0.dev/writing/skyscraper-puzzle-1
+2) https://codereview.stackexchange.com/questions/256579/skyscraper-solver-for-nxn-size
+3) https://www.conceptispuzzles.com/index.aspx?uri=puzzle/skyscrapers/techniques
+
 * main.c
 ```c
 #include <stdio.h>
