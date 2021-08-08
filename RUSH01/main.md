@@ -5,6 +5,25 @@
 2) https://codereview.stackexchange.com/questions/256579/skyscraper-solver-for-nxn-size
 3) https://www.conceptispuzzles.com/index.aspx?uri=puzzle/skyscrapers/techniques
 
+## General Logic FLow
+1) Validate the input
+   - check is it only 1 parameter
+   - check whether there is space for each two characters.
+   - check whether the input is within 1 and 4.
+2) Initialise the constrain array
+   - first row for column top.
+   - second row for column bottom.
+   - third row for row left.
+   - fourth row for row right.
+3) Initialise the board with '0'.
+4) Start backtracking
+   - Fill the board with non-repeated numbers.
+   - When all the slots had been filled, 
+     run a validation check to see whether it is a solution or not.
+   - If it is not, then change the filled number.
+   - Otherwise, return and print out the filled board.
+   - Print error in the case when all possible numbers had been tried,
+     but there is still no solution available. 
 * main.c
 ```c
 #include <stdio.h>
